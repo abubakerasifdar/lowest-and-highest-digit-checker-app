@@ -3,7 +3,7 @@ document.addEventListener("keydown", (e) => {
     if (e.key == "Enter") {
         myFunctionForLargest();
     }
-    if(e.key = "Shift"){
+    if(e.key == "Enter"){
         myFunctionForSmallest
     }
 })
