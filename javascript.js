@@ -1,27 +1,39 @@
-// 25 line of code
+// 40 line of code 10 line of code is logical other is the 30 line is the general.
 document.addEventListener("keydown", (e) => {
     if (e.key == "Enter") {
-        myFunction();
-
+        myFunctionForLargest();
+    }
+    if(e.key = "Shift"){
+        myFunctionForSmallest
     }
 })
-function myFunction() {
-    let input = Number(document.getElementById('input').value);
+function myFunctionForLargest() {
+    let input = document.getElementById('input').value;
+    let array = input.split('');
+    let len = array.length
     let result = "";
-    let count = 0;
-    let oddProduct = 1;
-    var oddNumber = '';
-    for (let i = 0; i <= input; i++) {
-        count = `${count + i},`;
-    }
-    let countarray = count.split(',');
-    let len = countarray.length-1
-    for (let i = 0; i < len; i++) {
-         if (countarray[i] != 0 && countarray[i] % 2 != 0) { oddNumber = oddNumber + Number(countarray[i]) + "<br>";
-            oddProduct = oddProduct * countarray[i];
+    let largest = array[0];
+    for(i=1; i<len; i++){7
+        if(largest<array[i]){
+              largest=  array[i];
         }
     }
-    result = `You Entered:  ${input} <br> & In this odd numbers are: <br>  ${oddNumber} <br>& Their Product is ${oddProduct}`;
+    result = largest;
     document.getElementById('output').style.display = "flex";
     document.getElementById('output').innerHTML = result;
+}
+function myFunctionForSmallest() {
+    let input = document.getElementById('input').value;
+    let array = input.split('');
+    let len = array.length
+    let result = "";
+    let smallest = array[0];
+    for(i=1; i<len; i++){7
+        if(smallest>array[i]){
+              smallest=  array[i];
+        }
+    }
+    result = smallest;
+    document.getElementById('output2').style.display = "flex";
+    document.getElementById('output2').innerHTML = result;
 }
