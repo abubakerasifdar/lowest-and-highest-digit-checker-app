@@ -16,11 +16,13 @@
 
         input {
             height: 40px;
-            width: 75%;
+            width: 90%;
+            margin: 10px auto;
 
         }
 
         button {
+        width: 45%;
             height: 46px;
             background-color: blue;
             color: white;
@@ -30,7 +32,7 @@
 
         }
 
-        #output {
+        #output, #output2 {
             height: 10%;
             background-color: red;
             color: white;
